@@ -170,8 +170,8 @@ a:active {
 
 .visually-hidden:not(:focus):not(:active) {
     position: absolute !important;
-    height: auto;
-    width: 100%;
+    height: 1px;
+    width: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
@@ -211,41 +211,6 @@ ul.row {
 
 .col-1-2 {
     width: calc((100% / 2) - 2rem);
-}
-
-@media only screen and (max-width: 767px) {
-    .section-padding {
-        padding: 5rem 1.5rem;
-    }
-
-    .section-body-padding{
-        padding: 2rem 0 0;
-    }
-
-    ul.row{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        flex-direction: column;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-
-    [class*='col-'] {
-        margin: 0 0 3rem 0;
-    }
-
-    .col-1-3 {
-        width: 100%;
-    }
-
-    .col-1-2 {
-        width: 100%;
-    }
 }
 
 /* Navbar
@@ -296,13 +261,6 @@ ul.row {
     background-color: var(--color-primary);
     width: 100%;
 }
-
-@media only screen and (max-width: 767px) {
-    .navbar-menu{
-        display: none;
-    }
-}
-
 
 /* Header
     ============================= */
@@ -442,11 +400,6 @@ ul.row {
     flex-direction: row-reverse;
 }
 
-@media only screen and (max-width: 767px){
-    .section-latest-news .row {
-        flex-direction: column;
-    }
-}
 /* Section SERVICES
     ============================= */
 
